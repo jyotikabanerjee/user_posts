@@ -1,0 +1,35 @@
+{
+  "Post": {
+    "title": {
+      "string": {}
+    },
+    "text": {
+      "loremParagraphs": {
+        "minLength": 200,
+        "maxLength": 500
+      }
+    },
+    "comments": {
+      "hasMany": "Comment"
+    }
+  },
+  "Comment": {
+    "body": {
+      "string": {}
+    },
+    "post": {
+      "belongsTo": "Post"
+    }
+  },
+  "User": {
+    "name": {
+      "string": {}
+    },
+    "title": {
+      "string": {}
+    },
+    "posts": {
+      "hasMany": "Post"
+    }
+  }
+}
