@@ -1,11 +1,12 @@
 
-import { Container } from 'react-bulma-components';
+import { Container, Field, Input } from 'react-bulma-components';
 
 
-const AddUser = () => {
+const AddUser = ({ }) => {
   return (
     <>
       <Container>
+        Add User Form
       </Container>
     </>
   );

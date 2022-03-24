@@ -5,7 +5,7 @@ import useGet from '../hooks/useGet';
 
 const ListSection = ({ data }) => {
 
-  const { loading, error, data: users } = useGet('https://jsonplaceholder.typicode.com/users');
+  const { loading, error, data: users } = useGet('https://mockend.com/jyotikabanerjee/user_posts/users') //useGet('https://jsonplaceholder.typicode.com/users');
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
