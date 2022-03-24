@@ -7,14 +7,20 @@ import AddUser
 const Users = () => {
   const [showAddUser, setShowAddUser] = useState(false);
 
+  const showSectionFn = () => {
+    setShowAddUser(true);
+  }
+
+  const hideSectionFn = () => {
+    setShowAddUser(false);
+  }
+
   return (
-    <>
-      <Container>
-        <TopSection showSection={setShowAddUser} sectionHeading={`My Team`} btnLabel={`Add User`} />
-        {!showAddUser && <ListSection />}
-        {showAddUser && <AddUser />}
-      </Container>
-    </>
+    <Container>
+      <TopSection btnClickHandler={showSectionFn} sectionHeading={`My Team`} btnLabel={`Add User`} />
+      {!showAddUser && <ListSection />}
+      {showAddUser && <AddUser showSection={hideSectionFn} />}
+    </Container>
   );
 }
 

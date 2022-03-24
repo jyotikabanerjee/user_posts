@@ -25,6 +25,9 @@
     "name": {
       "string": {}
     },
+    "email": {
+      "string": {}
+    },
     "title": {
       "string": {}
     },

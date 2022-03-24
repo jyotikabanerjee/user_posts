@@ -28,3 +28,5 @@ const usePost = (url, body) => {
 
   return { data, loading, error };
 }
+
+export default usePost
