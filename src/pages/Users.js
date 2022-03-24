@@ -19,7 +19,7 @@ const Users = () => {
     <Container>
       <TopSection btnClickHandler={showSectionFn} sectionHeading={`My Team`} btnLabel={`Add User`} />
       {!showAddUser && <ListSection />}
-      {showAddUser && <AddUser showSection={hideSectionFn} />}
+      {showAddUser && <AddUser btnClickHandler={hideSectionFn} />}
     </Container>
   );
 }
